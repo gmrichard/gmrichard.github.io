@@ -1,0 +1,36 @@
+# Site settings
+name: Richard's Blog
+email: gmrichard@163.com
+author: Richard
+url: https://gmrichard.github.io
+resume_site: https://gmrichard.github.io
+github: https://github.com/gmrichard
+baseurl: ""
+description: less is more!
+meta_description: 生命不止;折腾不休
+motto: It's our wits that make us men.
+banner: 学而不思则罔，思而不学则殆。
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: gmrichard
+
+# Build settings
+markdown: kramdown
+
+#comment:
+gitalk:
+   enable: true
+   owner: gmrichard
+   repo: gmrichard.github.io
+   clientID: 509e88d494d6c584b77f
+   clientSecret: cef026503f70d8f907cb08fb0aa2cf3d761038d3
+   admin: gmrichard
+
+
+baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+
