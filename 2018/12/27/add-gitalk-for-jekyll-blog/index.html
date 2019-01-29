@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>倒序人生 - Richard's Blog</title>
+	<title>在Jekyll博客中添加评论系统 - Richard's Blog</title>
 
 	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
 	<link rel="icon" href="/styles/images/favicon.jpg">
@@ -13,10 +13,10 @@
 	<link rel="stylesheet" href="/styles/css/index.css">
 	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/styles/css/syntax.css">
-	<link rel="canonical" href="/2019/01/06/%E5%80%92%E5%BA%8F%E4%BA%BA%E7%94%9F/">
+	<link rel="canonical" href="/2018/12/27/add-gitalk-for-jekyll-blog/">
 	<link rel="alternate" type="application/rss+xml" title="Richard's Blog" href="/feed.xml">
 	
-	<meta name="keywords" content="倒序人生, Richard's Blog, 生命不止;折腾不休">
+	<meta name="keywords" content="在Jekyll博客中添加评论系统, Richard's Blog, 生命不止;折腾不休">
 	<meta name="description" content="生命不止;折腾不休">
 
 	<script src="/styles/js/jquery.min.js"></script>
@@ -93,8 +93,8 @@
   <div class="container">
   	
   		<!--
-		    <h1>倒序人生</h1>
-		    <p>Post on Jan 06, 2019 by <a href="/about">Richard</a></p>
+		    <h1>在Jekyll博客中添加评论系统</h1>
+		    <p>Post on Dec 27, 2018 by <a href="/about">Richard</a></p>
 		-->
 		<!--
 		    <h1>It's our wits that make us men.</h1>
@@ -108,7 +108,7 @@
 <div class="banner">
   <div class="container">
   	
-    	<a href="/categories/#诗歌散文-ref">诗歌散文</a>	/
+    	<a href="/categories/#开发工具-ref">开发工具</a>	/
     	<a href="/tag/#-ref"></a>
     
   </div>
@@ -143,69 +143,86 @@
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">倒序人生</h1>
+              <h1 class="post-title">在Jekyll博客中添加评论系统</h1>
               <!--
-                <p class="post-meta">Jan 6, 2019</p>
+                <p class="post-meta">Dec 27, 2018</p>
               -->
-              <div class="meta">Posted on <span class="postdate">Jan 06, 2019</span> By <a target="_blank" href="http://localhost:4000">Richard</a></div>
+              <div class="meta">Posted on <span class="postdate">Dec 27, 2018</span> By <a target="_blank" href="http://localhost:4000">Richard</a></div>
               <br />
             </header>
             <article class="post-content">
               <ul id="markdown-toc">
-  <li><a href="#living-life-backwards-quote" id="markdown-toc-living-life-backwards-quote">Living life backwards quote</a></li>
-  <li><a href="#倒序人生" id="markdown-toc-倒序人生">倒序人生</a></li>
+  <li><a href="#一-申请一个oauth-application" id="markdown-toc-一-申请一个oauth-application">一. 申请一个OAuth Application</a></li>
+  <li><a href="#二-增加关键代码" id="markdown-toc-二-增加关键代码">二. 增加关键代码</a></li>
+  <li><a href="#三-添加评论框代码" id="markdown-toc-三-添加评论框代码">三. 添加评论框代码</a></li>
+  <li><a href="#四-添加鉴权代码" id="markdown-toc-四-添加鉴权代码">四. 添加鉴权代码</a></li>
 </ul>
 
-<h1 id="living-life-backwards-quote">Living life backwards quote</h1>
-<p>Woody Allen</p>
+<p>此次添加的评论系统为<a href="https://gitalk.github.io/">gitalk</a>, 基于github issue,很适合github上Jekyll博客。</p>
 
-<p>In my next life<br />
-I want to live backwards.<br />
-You start out dead<br />
-and get that out of the way.<br />
-Then you wake up in an old people’s home<br />
-feeling better every day.<br />
-You get kicked out for being too healthy,<br />
-go collect your pension,<br />
-and then when you start work<br />
-you get a gold watch<br />
-and a party on your first day.<br />
-You work for 40 years<br />
-until you’re young enough to enjoy your retirement.<br />
-You part, drink alcohol,<br />
-and are generally promiscuous,<br />
-then you are ready for high school.<br />
-You then go to primary school,<br />
-You become a kid, you play,<br />
-You have no responsibilities,<br />
-You become a baby<br />
-until you are born.<br />
-And then you spend your last 9 months  floating in luxurious spa<br />
-like conditions with central heating  and room service on tap<br />
-larger quarters every day and then, Voila!<br />
-You finish off as an orgasm!</p>
+<h1 id="一-申请一个oauth-application">一. 申请一个OAuth Application</h1>
+<blockquote>
+  <p>Github头像下拉菜单 &gt; Settings &gt; 左边Developer settings下的OAuth Application &gt; Register a new application，填写相关信息：</p>
+</blockquote>
 
-<h1 id="倒序人生">倒序人生</h1>
-<p>伍迪·艾伦</p>
+<p>关键是<strong>Authorization callback URL</strong>，填写和你博客主页地址相同。</p>
 
-<p>下辈子，我想倒着活一回。<br />
-第一步就是死亡，然后把它抛在脑后。<br />
-在敬老院睁开眼<br />
-一天比一天感觉更好<br />
-直到因为太健康被踢出去。<br />
-领上养老金，然后开始工作<br />
-第一天就得到一块金表，还有庆祝派对<br />
-40年后，够年轻了，可以去享受退休生活了。<br />
-狂欢，喝酒，恣情纵欲<br />
-然后准备好可以上高中了。<br />
-接着上小学<br />
-然后变成了个孩子，无忧无虑地玩耍<br />
-肩上没有任何责任<br />
-不久，成了婴儿，直到出生。<br />
-人生最后九个月，在奢华的水疗池里漂着<br />
-那里有中央供暖，客房服务随叫随到<br />
-住的地方一天比一天大，然后，哈！<br />
-我在高潮中结束了一生！</p>
+<p>完成后，得到 <strong>Client ID</strong> 和 <strong>Client Secret</strong>，后面需要用到。</p>
+
+<h1 id="二-增加关键代码">二. 增加关键代码</h1>
+
+<p>下载 <a href="/styles/css/gitalk.css">gitalk.css</a>
+和 <a href="/styles/js/gitalk.min.js">gitalk.min.js</a>
+放入相应的位置。</p>
+
+<p>在_layouts下的_post.html中，开始的地方加如下代码：</p>
+<pre>
+&lt;link rel="stylesheet" href="../../../../styles/css/gitalk.css"&gt;
+    &lt;script src="../../../../styles/js/gitalk.min.js"&gt;&lt;/script&gt;
+
+</pre>
+
+<h1 id="三-添加评论框代码">三. 添加评论框代码</h1>
+<p>下载<a href="/_includes/comments.html">comments.html</a>，放入_includes目录中。</p>
+
+<p>在那个 _post.html文件中,在正文最后 添加 gitalk 代码,如下:</p>
+
+<pre>
+    &lt;!--   gitalk       --&gt;
+    
+    &lt;div class="comment"&gt;
+    &lt;div id="gitalk-container"&gt;&lt;/div&gt;
+    &lt;link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"&gt;
+    &lt;script src="https://unpkg.com/gitalk/dist/gitalk.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+    var gitalk = new Gitalk({
+        id: '2018-12-27 00:32:24 +0000',
+        clientID: '9309266a4518558b7138',
+        clientSecret: '3233f9c7e9129249ac3a0e8e04b001cf02220139',
+        repo: 'codejsd.github.io',
+        owner: 'codejsd',
+        admin: ['codejsd'], 
+    	labels: ['Gitalk'],
+    })
+    gitalk.render('gitalk-container')
+    &lt;/script&gt;
+    
+    &lt;/div&gt;
+</pre>
+
+<h1 id="四-添加鉴权代码">四. 添加鉴权代码</h1>
+
+<p>在 _config.yml中,最后面,在对应的评论模块添加如下代码:</p>
+<pre>
+gitalk:
+   enable: true
+   owner: codejsd
+   repo: codejsd.github.io
+   clientID: 9309266a4518558b7138
+   clientSecret: 3233f9c7e9129249ac3a0e8e04b001cf02220139
+   admin: codejsd
+
+</pre>
 
 
             </article>
@@ -220,7 +237,7 @@ You finish off as an orgasm!</p>
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
 var gitalk = new Gitalk({
-    id: '2019-01-06 00:00:00 +0800',
+    id: '2018-12-27 00:00:00 +0800',
     clientID: '509e88d494d6c584b77f',
     clientSecret: 'cef026503f70d8f907cb08fb0aa2cf3d761038d3',
     repo: 'gmrichard.github.io',

@@ -5,8 +5,8 @@
     <description>less is more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Jan 2019 17:45:35 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Jan 2019 17:45:35 +0800</lastBuildDate>
+    <pubDate>Tue, 29 Jan 2019 18:45:09 +0800</pubDate>
+    <lastBuildDate>Tue, 29 Jan 2019 18:45:09 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -101,76 +101,6 @@ sudo ./studio.sh&lt;/p&gt;
       </item>
     
       <item>
-        <title>倒序人生</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#living-life-backwards-quote&quot; id=&quot;markdown-toc-living-life-backwards-quote&quot;&gt;Living life backwards quote&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#倒序人生&quot; id=&quot;markdown-toc-倒序人生&quot;&gt;倒序人生&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;living-life-backwards-quote&quot;&gt;Living life backwards quote&lt;/h1&gt;
-&lt;p&gt;Woody Allen&lt;/p&gt;
-
-&lt;p&gt;In my next life&lt;br /&gt;
-I want to live backwards.&lt;br /&gt;
-You start out dead&lt;br /&gt;
-and get that out of the way.&lt;br /&gt;
-Then you wake up in an old people’s home&lt;br /&gt;
-feeling better every day.&lt;br /&gt;
-You get kicked out for being too healthy,&lt;br /&gt;
-go collect your pension,&lt;br /&gt;
-and then when you start work&lt;br /&gt;
-you get a gold watch&lt;br /&gt;
-and a party on your first day.&lt;br /&gt;
-You work for 40 years&lt;br /&gt;
-until you’re young enough to enjoy your retirement.&lt;br /&gt;
-You part, drink alcohol,&lt;br /&gt;
-and are generally promiscuous,&lt;br /&gt;
-then you are ready for high school.&lt;br /&gt;
-You then go to primary school,&lt;br /&gt;
-You become a kid, you play,&lt;br /&gt;
-You have no responsibilities,&lt;br /&gt;
-You become a baby&lt;br /&gt;
-until you are born.&lt;br /&gt;
-And then you spend your last 9 months  floating in luxurious spa&lt;br /&gt;
-like conditions with central heating  and room service on tap&lt;br /&gt;
-larger quarters every day and then, Voila!&lt;br /&gt;
-You finish off as an orgasm!&lt;/p&gt;
-
-&lt;h1 id=&quot;倒序人生&quot;&gt;倒序人生&lt;/h1&gt;
-&lt;p&gt;伍迪·艾伦&lt;/p&gt;
-
-&lt;p&gt;下辈子，我想倒着活一回。&lt;br /&gt;
-第一步就是死亡，然后把它抛在脑后。&lt;br /&gt;
-在敬老院睁开眼&lt;br /&gt;
-一天比一天感觉更好&lt;br /&gt;
-直到因为太健康被踢出去。&lt;br /&gt;
-领上养老金，然后开始工作&lt;br /&gt;
-第一天就得到一块金表，还有庆祝派对&lt;br /&gt;
-40年后，够年轻了，可以去享受退休生活了。&lt;br /&gt;
-狂欢，喝酒，恣情纵欲&lt;br /&gt;
-然后准备好可以上高中了。&lt;br /&gt;
-接着上小学&lt;br /&gt;
-然后变成了个孩子，无忧无虑地玩耍&lt;br /&gt;
-肩上没有任何责任&lt;br /&gt;
-不久，成了婴儿，直到出生。&lt;br /&gt;
-人生最后九个月，在奢华的水疗池里漂着&lt;br /&gt;
-那里有中央供暖，客房服务随叫随到&lt;br /&gt;
-住的地方一天比一天大，然后，哈！&lt;br /&gt;
-我在高潮中结束了一生！&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 06 Jan 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/01/06/%E5%80%92%E5%BA%8F%E4%BA%BA%E7%94%9F/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/01/06/%E5%80%92%E5%BA%8F%E4%BA%BA%E7%94%9F/</guid>
-        
-        <category>倒序人生</category>
-        
-        
-        <category>诗歌散文</category>
-        
-      </item>
-    
-      <item>
         <title>Jekyll</title>
         <description>
 &lt;ol&gt;
@@ -230,6 +160,76 @@ sudo gem install jekyll-feed #订阅用的工具&lt;/p&gt;
         
         
         <category>Ubuntu</category>
+        
+      </item>
+    
+      <item>
+        <title>倒序人生</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#living-life-backwards-quote&quot; id=&quot;markdown-toc-living-life-backwards-quote&quot;&gt;Living life backwards quote&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#倒序人生&quot; id=&quot;markdown-toc-倒序人生&quot;&gt;倒序人生&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;living-life-backwards-quote&quot;&gt;Living life backwards quote&lt;/h1&gt;
+&lt;p&gt;Woody Allen&lt;/p&gt;
+
+&lt;p&gt;In my next life&lt;br /&gt;
+I want to live backwards.&lt;br /&gt;
+You start out dead&lt;br /&gt;
+and get that out of the way.&lt;br /&gt;
+Then you wake up in an old people’s home&lt;br /&gt;
+feeling better every day.&lt;br /&gt;
+You get kicked out for being too healthy,&lt;br /&gt;
+go collect your pension,&lt;br /&gt;
+and then when you start work&lt;br /&gt;
+you get a gold watch&lt;br /&gt;
+and a party on your first day.&lt;br /&gt;
+You work for 40 years&lt;br /&gt;
+until you’re young enough to enjoy your retirement.&lt;br /&gt;
+You part, drink alcohol,&lt;br /&gt;
+and are generally promiscuous,&lt;br /&gt;
+then you are ready for high school.&lt;br /&gt;
+You then go to primary school,&lt;br /&gt;
+You become a kid, you play,&lt;br /&gt;
+You have no responsibilities,&lt;br /&gt;
+You become a baby&lt;br /&gt;
+until you are born.&lt;br /&gt;
+And then you spend your last 9 months  floating in luxurious spa&lt;br /&gt;
+like conditions with central heating  and room service on tap&lt;br /&gt;
+larger quarters every day and then, Voila!&lt;br /&gt;
+You finish off as an orgasm!&lt;/p&gt;
+
+&lt;h1 id=&quot;倒序人生&quot;&gt;倒序人生&lt;/h1&gt;
+&lt;p&gt;伍迪·艾伦&lt;/p&gt;
+
+&lt;p&gt;下辈子，我想倒着活一回。&lt;br /&gt;
+第一步就是死亡，然后把它抛在脑后。&lt;br /&gt;
+在敬老院睁开眼&lt;br /&gt;
+一天比一天感觉更好&lt;br /&gt;
+直到因为太健康被踢出去。&lt;br /&gt;
+领上养老金，然后开始工作&lt;br /&gt;
+第一天就得到一块金表，还有庆祝派对&lt;br /&gt;
+40年后，够年轻了，可以去享受退休生活了。&lt;br /&gt;
+狂欢，喝酒，恣情纵欲&lt;br /&gt;
+然后准备好可以上高中了。&lt;br /&gt;
+接着上小学&lt;br /&gt;
+然后变成了个孩子，无忧无虑地玩耍&lt;br /&gt;
+肩上没有任何责任&lt;br /&gt;
+不久，成了婴儿，直到出生。&lt;br /&gt;
+人生最后九个月，在奢华的水疗池里漂着&lt;br /&gt;
+那里有中央供暖，客房服务随叫随到&lt;br /&gt;
+住的地方一天比一天大，然后，哈！&lt;br /&gt;
+我在高潮中结束了一生！&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 06 Jan 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/01/06/Living-life-backwards-quote/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/01/06/Living-life-backwards-quote/</guid>
+        
+        <category>倒序人生</category>
+        
+        
+        <category>诗歌散文</category>
         
       </item>
     
@@ -409,7 +409,8 @@ shen    ALL=(ALL:ALL) ALL&lt;/p&gt;
 
 &lt;h1 id=&quot;12-ssh-key&quot;&gt;12. ssh key&lt;/h1&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;ssh-keygen -t rsa -b 4096 -C “xxx@xxx.com”&lt;/p&gt;
+  &lt;p&gt;ssh-keygen -t rsa -b 4096 -C “xxx@xxx.com”&lt;br /&gt;
+ssh -T git@github.com&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;13-添加删除-ppa-源&quot;&gt;13. 添加删除 PPA 源&lt;/h1&gt;
@@ -516,8 +517,8 @@ gitalk:
 
 </description>
         <pubDate>Thu, 27 Dec 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/12/27/%E5%9C%A8Jekyll%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/12/27/%E5%9C%A8Jekyll%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+        <link>http://localhost:4000/2018/12/27/add-gitalk-for-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/12/27/add-gitalk-for-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -878,8 +879,8 @@ MIMO。&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 26 Dec 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/12/26/5G%E4%BB%8B%E7%BB%8D/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/12/26/5G%E4%BB%8B%E7%BB%8D/</guid>
+        <link>http://localhost:4000/2018/12/26/5G-introduce/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/12/26/5G-introduce/</guid>
         
         <category>5G</category>
         
