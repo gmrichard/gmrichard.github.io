@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>git命令 - Richard's Blog</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2018/12/24/git-command/">
+	<link rel="alternate" type="application/rss+xml" title="Richard's Blog" href="/feed.xml">
+	
+	<meta name="keywords" content="git命令, Richard's Blog, 生命不止;折腾不休">
+	<meta name="description" content="生命不止;折腾不休">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?94be4b0f9fc5d94cc0d0415ea6761ae9";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.jpg">
+      </a>
+    -->
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Categories</a>
+        </li>
+        <li>
+          <a href="/tag">Tags</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li><a rel="nofollow" href="/webs">web管理</a></li>
+            <li><a rel="nofollow" href="/reference">推荐博客</a></li>
+            <li><a href="/feed.xml">RSS订阅</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/gmrichard">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="https://gmrichard.github.io">关于作者</a></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/gmrichard/gmrichard.github.io">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <!--
+<div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>git命令</h1>
+		    <p>Post on Dec 24, 2018 by <a href="/about">Richard</a></p>
+		-->
+		<!--
+		    <h1>It's our wits that make us men.</h1>
+		->
+    
+  </div>
+</div>
+-->
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#开发工具-ref">开发工具</a>	/
+    	<a href="/tag/#-ref"></a>
+    
+  </div>
+</div>
+
+    
+
+    <!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../styles/css/gitalk.css">
+    <script src="../../../../styles/js/gitalk.min.js"></script>
+
+<div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>List</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+  	<!--
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+    -->
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">git命令</h1>
+              <!--
+                <p class="post-meta">Dec 24, 2018</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Dec 24, 2018</span> By <a target="_blank" href="http://localhost:4000">Richard</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#远程仓库命令" id="markdown-toc-远程仓库命令">远程仓库命令</a></li>
+  <li><a href="#基本命令" id="markdown-toc-基本命令">基本命令</a></li>
+  <li><a href="#分支命令" id="markdown-toc-分支命令">分支命令</a></li>
+  <li><a href="#命令汇总" id="markdown-toc-命令汇总">命令汇总</a></li>
+  <li><a href="#工作区暂存区和版本库" id="markdown-toc-工作区暂存区和版本库">工作区、暂存区和版本库</a></li>
+  <li><a href="#windows-git-安装" id="markdown-toc-windows-git-安装">windows git 安装</a></li>
+</ul>
+
+<h1 id="远程仓库命令">远程仓库命令</h1>
+<ol>
+  <li>clone
+    <blockquote>
+      <p>git clone git@github.com:codejsd/lm.git</p>
+    </blockquote>
+  </li>
+  <li>查看远程仓库
+    <blockquote>
+      <p>git remote -v</p>
+    </blockquote>
+  </li>
+  <li>添加远程仓库
+    <blockquote>
+      <p>git remote add [name][url]<br />
+例子：git remote add origin git@github.com:codejsd/lm.git</p>
+    </blockquote>
+  </li>
+  <li>删去远程仓库
+    <blockquote>
+      <p>git remote rm [name]<br />
+例子：git remote rm origin</p>
+    </blockquote>
+  </li>
+  <li>修改远程仓库
+    <blockquote>
+      <p>git remote set-url [name][newUrl]</p>
+    </blockquote>
+  </li>
+  <li>增加远程仓库分支
+    <blockquote>
+      <p>git push [name] [branch]<br />
+例子：git push origin gh-pages</p>
+    </blockquote>
+  </li>
+  <li>删去远程仓库分支
+    <blockquote>
+      <p>git push [name] :[branch]<br />
+例子：git push origin :gh-pages</p>
+    </blockquote>
+  </li>
+  <li>拉取远程仓库
+    <blockquote>
+      <p>git pull origin master</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h1 id="基本命令">基本命令</h1>
+<ol>
+  <li>查看本地修改状态
+    <blockquote>
+      <p>git status</p>
+    </blockquote>
+  </li>
+  <li>添加更新
+    <blockquote>
+      <p>git add .</p>
+    </blockquote>
+  </li>
+  <li>提交更新
+    <blockquote>
+      <p>git commit -m “注释”<br />
+覆盖上次的提交：git commit –amend -m “注释”</p>
+    </blockquote>
+  </li>
+  <li>show
+    <blockquote>
+      <p>git show xxx  // 显示commit xxx 的修改</p>
+    </blockquote>
+  </li>
+  <li>reset</li>
+</ol>
+<pre>
+git包含3个状态：HEAD, INDEX, WORKING
+git add:	将WORKING的改变加到INDEX, WORKING=INDEX!=HEAD
+git commit:	将INDEX的状态加到HEAD, WORKING=INDEX=HEAD
+与此相反：
+git reset --soft xxx            // 将HEAD改到xxx, HEAD!=INDEX=WORKING, 相当于commit之前的状态
+git reset --mixed(default) xxx  // 将HEAD和INDEX都改到xxx, HEAD=INDEX!=WORKING的还在, 
+                                // 相当于add之前的状态 
+git reset --hard xxx            // 将HEAD和INDEX和WORKING都改到xxx, 本地修改WORKING丢失
+</pre>
+
+<h1 id="分支命令">分支命令</h1>
+<ol>
+  <li>查看本地分支
+    <blockquote>
+      <p>git branch</p>
+    </blockquote>
+  </li>
+  <li>查看远程分支
+    <blockquote>
+      <p>git branch -r</p>
+    </blockquote>
+  </li>
+  <li>查看本地和远程分支
+    <blockquote>
+      <p>git brach -a</p>
+    </blockquote>
+  </li>
+  <li>创建本地分支
+    <blockquote>
+      <p>git branch [branch-name]</p>
+    </blockquote>
+  </li>
+  <li>切换分支
+    <blockquote>
+      <p>git checkout [branch-name]</p>
+    </blockquote>
+  </li>
+  <li>创建新分支并立即切换到新分支
+    <blockquote>
+      <p>git checkout -b [name]</p>
+    </blockquote>
+  </li>
+  <li>删除分支
+    <blockquote>
+      <p>git branch -D [name]</p>
+    </blockquote>
+  </li>
+  <li>合并分支
+    <blockquote>
+      <p>git merge [name] //将名称为[name]的分支与当前分支合并</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h1 id="命令汇总">命令汇总</h1>
+
+<p><img src="/res/images/git/git-command.png" alt="/res/images/git/git-command.png" /></p>
+
+<h1 id="工作区暂存区和版本库">工作区、暂存区和版本库</h1>
+
+<ol>
+  <li>工作区：就是你在电脑里能看到的目录和文件。</li>
+  <li>暂存区：英文叫stage, 或index。一般存放在 “.git目录下” 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+  <li>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br />
+下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：</li>
+</ol>
+
+<p><img src="/res/images/git/git-struct.png" alt="/res/images/git/git-struct.png" /></p>
+
+<p>图中左侧为工作区，右侧为版本库。在版本库中标记为 “index” 的区域是暂存区（stage, index），标记为 “master” 的是 master 分支所代表的目录树。</p>
+
+<p>图中我们可以看出此时 “HEAD” 实际是指向 master 分支的一个”游标”。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。</p>
+
+<p>图中的 objects 标识的区域为 Git 的对象库，实际位于 “.git/objects” 目录下，里面包含了创建的各种对象及内容。</p>
+
+<p>当对工作区修改（或新增）的文件执行 “git add” 命令时，暂存区的目录树被更新，同时工作区修改（或新增）的文件内容被写入到对象库中的一个新的对象中，而该对象的ID被记录在暂存区的文件索引中。</p>
+
+<p>当执行提交操作（git commit）时，暂存区的目录树写到版本库（对象库）中，master 分支会做相应的更新。即 master 指向的目录树就是提交时暂存区的目录树。</p>
+
+<p>当执行 “git reset HEAD” 命令时，暂存区的目录树会被重写，被 master 分支指向的目录树所替换，但是工作区不受影响。</p>
+
+<p>当执行 “git rm –cached <file>" 命令时，会直接从暂存区删除文件，工作区则不做出改变。</file></p>
+
+<p>当执行 “git checkout .” 或者 “git checkout – <file>" 命令时，会用暂存区全部或指定的文件替换工作区的文件。这个操作很危险，会清除工作区中未添加到暂存区的改动。</file></p>
+
+<p>当执行 “git checkout HEAD .” 或者 “git checkout HEAD <file>" 命令时，会用 HEAD 指向的 master 分支中的全部或者部分文件替换暂存区和以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未提交的改动，也会清除暂存区中未提交的改动。</file></p>
+
+<h1 id="windows-git-安装">windows git 安装</h1>
+
+<p>下载地址 <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> 或  <a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+
+            </article>
+        </div>
+      </div>
+	  
+	  <!--   gitalk       -->
+	  
+	  <div class="comment">
+	  	<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    id: '2018-12-24 00:00:00 +0800',
+    clientID: '509e88d494d6c584b77f',
+    clientSecret: 'cef026503f70d8f907cb08fb0aa2cf3d761038d3',
+    repo: 'gmrichard.github.io',
+    owner: 'gmrichard',
+    admin: ['gmrichard'], 
+	labels: ['Gitalk'],
+})
+gitalk.render('gitalk-container')
+</script> 
+
+	  </div>
+	  
+	  <!--   gitalk       -->
+      
+      </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2019-2050 <a href="https://gmrichard.github.io"><code>Richard</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>
